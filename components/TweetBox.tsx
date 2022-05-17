@@ -8,29 +8,28 @@ import {
 
 function TweetBox() {
   return (
-    <div className="flex p-5 space-x-2">
+    <div className="flex space-x-2 p-5">
       <img
         src="https://links.papareact.com/gll"
         alt=""
-        className="object-cover rounded-full mt4 h-14 w-14"
+        className="mt4 h-14 w-14 rounded-full object-cover"
       />
-      <div className="flex items-center flex-1 pl-2">
-        <form className="flex flex-col flex-1">
+      <div className="flex flex-1 items-center pl-2">
+        <form className="flex flex-1 flex-col">
           <input
             type="text"
             placeholder="What is Happening?"
-            className="w-full h-24 text-xl outline-none placeholder:text-xl"
+            className="h-24 w-full text-xl outline-none placeholder:text-xl"
           />
           <div className="flex items-center">
             <div className="flex flex-1 space-x-2 text-twitter">
-              {/* Icons */}
-              <PhotographIcon className="w-5 h-5 transition-transform duration-200 ease-out cursor-pointer hover:scale-150" />
-              <SearchCircleIcon className="w-5 h-5 transition-transform duration-200 ease-out cursor-pointer hover:scale-150" />
-              <EmojiHappyIcon className="w-5 h-5 transition-transform duration-200 ease-out cursor-pointer hover:scale-150" />
-              <CalendarIcon className="w-5 h-5 transition-transform duration-200 ease-out cursor-pointer hover:scale-150" />
-              <LocationMarkerIcon className="w-5 h-5 transition-transform duration-200 ease-out cursor-pointer hover:scale-150" />
+              <PhotographIcon className="h-5 w-5 cursor-pointer transition-transform duration-200 ease-out hover:scale-150" />
+              <SearchCircleIcon className="h-5 w-5 cursor-pointer transition-transform duration-200 ease-out hover:scale-150" />
+              <EmojiHappyIcon className="h-5 w-5 cursor-pointer transition-transform duration-200 ease-out hover:scale-150" />
+              <CalendarIcon className="h-5 w-5 cursor-pointer transition-transform duration-200 ease-out hover:scale-150" />
+              <LocationMarkerIcon className="h-5 w-5 cursor-pointer transition-transform duration-200 ease-out hover:scale-150" />
             </div>
-            <button className="px-5 py-2 font-bold text-white rounded-full bg-twitter">
+            <button className="rounded-full bg-twitter px-5 py-2 font-bold text-white">
               Tweet
             </button>
           </div>
