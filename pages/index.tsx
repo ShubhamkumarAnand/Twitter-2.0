@@ -1,11 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Feed from '../components/Feed'
 import Sidebar from '../components/Sidebar'
+import Widgets from '../components/Widgets'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div>
       <Head>
         <title>Twitter 2.0</title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,7 +17,9 @@ const Home: NextPage = () => {
         {/* Sidebar */}
         <Sidebar />
         {/* Feed */}
+        <Feed />
         {/* Widgets */}
+        <Widgets />
       </main>
     </div>
   )
