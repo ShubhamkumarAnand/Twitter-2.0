@@ -12,6 +12,7 @@ function Widgets() {
           className="flex-1 bg-transparent outline-none"
         />
       </div>
+      {/* This is for the twitter profile */}
       <TwitterTimelineEmbed
         sourceType="profile"
         screenName="imskanand"
